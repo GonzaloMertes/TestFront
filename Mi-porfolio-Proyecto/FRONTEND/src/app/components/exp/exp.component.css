@@ -1,0 +1,20 @@
+img{
+    width: 20%;
+    float: left;
+}
+h1{
+    font-size: 5vw;
+    text-align: left;
+    margin-left: 1VW;
+}
+h3{
+    font-size: 3vw;
+}
+.Exp{
+    background-color: #303766;
+    Overflow:hidden 
+}
+p{
+    font-size: 2vw;
+    
+}

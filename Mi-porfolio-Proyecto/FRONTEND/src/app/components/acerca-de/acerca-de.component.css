@@ -1,0 +1,41 @@
+.AcercaDe-Mi-Foto-Img {
+    width: 100%;
+    border-radius: 50%;
+    
+}
+.AcercaDe-Mi{
+    width: 23%;
+    position: relative;
+    float: left;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 1%;
+   
+}
+.AcercaDe{
+    background-color:#303766 ;
+    Overflow:hidden 
+}
+.AcercaDe-Resumen{
+    position: relative;
+    float: right;
+    width: 75%;
+    height: 100%;
+}
+h3{
+    
+    text-align:center;
+    font-size: 2.2vw
+}
+h1{
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: center;
+    font-size: 5vw
+}
+div{
+    background-color: #303766;
+}
+p{
+    font-size: 2vw;
+}
