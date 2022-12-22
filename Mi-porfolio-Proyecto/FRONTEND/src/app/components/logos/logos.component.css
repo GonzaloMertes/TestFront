@@ -1,3 +1,7 @@
+.menu-ingreso{
+    float:right;
+    align-items: center ;
+}
 .menu-LogoArg{
     float: left;
 }
@@ -7,6 +11,7 @@
 .menu-Git{
     float: right;
 }
+
 .Menu{
     height: 5.5vw;
     background-color: #303766; 
