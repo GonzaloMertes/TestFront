@@ -80,6 +80,7 @@ public class AuthController {
       
        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(loginUsuario.getNombreUsuario(),
                loginUsuario.getPassword()));
+       
       SecurityContextHolder.getContext().setAuthentication(authentication);
       
       String jwt = jwtProvider.generateToken(authentication);

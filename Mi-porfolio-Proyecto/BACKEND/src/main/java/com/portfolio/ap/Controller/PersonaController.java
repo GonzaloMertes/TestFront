@@ -4,6 +4,7 @@ import com.portfolio.ap.Interface.IPersonaService;
 import com.portfolio.ap.entity.Persona;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,6 +25,7 @@ public class PersonaController {
     return ipersonaService.getPersona();
     }
     
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/personas/crear")
     public String createPersona(@RequestBody Persona persona){
         ipersonaService.savePersona(persona);
@@ -32,12 +34,14 @@ public class PersonaController {
     
     //{id} indica que la id sera variable
     //@PathVariable indica que sera un camino variable dentro de las posibles id
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping ("/personas/borrar/{id}")
     public String deletePersona(@PathVariable Long id){
         ipersonaService.deletePersona(id);
         return "la persona fue eliminada sin problemas";
     }
-    
+   
+   @PreAuthorize("hasRole('ADMIN')")
    @PutMapping ("/personas/editar/{id}")
    public Persona editPersona(@PathVariable Long id, 
            @RequestParam("nombre")String nuevoNombre,
