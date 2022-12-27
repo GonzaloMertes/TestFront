@@ -7,7 +7,10 @@
         </div>
         <div class="menu-ingreso">
             <a href="/login">
-            <img class="logo-ingreso"src="../../../assets/login.png">
+            <img class="logo-ingreso"src="../../../assets/login.png" *ngIf="!isLogged">
+            </a>
+            <a >
+            <img class="logo-cerrar" src="../../../assets/cerrar.png" *ngIf="isLogged" type="button" (click)="onLogOut()">
             </a>
         </div>
         <div class="menu-Git">

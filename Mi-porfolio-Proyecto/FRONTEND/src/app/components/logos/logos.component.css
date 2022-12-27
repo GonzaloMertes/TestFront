@@ -1,6 +1,9 @@
 .menu-ingreso{
     float:right;
     align-items: center ;
+    height: 50%;
+   
+   
 }
 .menu-LogoArg{
     float: left;
@@ -22,3 +25,8 @@
 img{
     height: 5vw;
 }
+.menu-ingreso-cerrar{
+    text-align:center;
+    background-color: #303766; 
+}
+
