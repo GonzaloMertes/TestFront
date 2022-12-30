@@ -15,6 +15,12 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component'; 
 import { FormsModule } from '@angular/forms';
 import { interceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/exp/new-exp.component';
+import { EditExpComponent } from './components/exp/edit-exp.component';
+import { EduComponent } from './components/edu/edu.component';
+import { NewEduComponent } from './components/edu/new-edu.component';
+import { EditEduComponent } from './components/edu/edit-edu.component';
+
 
 @NgModule({
   declarations: [
@@ -27,6 +33,11 @@ import { interceptorProvider } from './service/interceptor-service';
     HysComponent,
     HomeComponent,
     LoginComponent,
+    NewExperienciaComponent,
+    EditExpComponent,
+    EduComponent,
+    NewEduComponent,
+    EditEduComponent,
     
   ],
   imports: [
