@@ -4,6 +4,7 @@ h1{
     margin-left: 2VW;
     position: relative;
     width: 100%;
+    color: #fff;
 }
 h2{
     font-size: 3vw;
@@ -24,4 +25,8 @@ td{
 
 .row{
     background-color:#303766 ;
+}
+
+.container{
+    max-width: 100%;
 }

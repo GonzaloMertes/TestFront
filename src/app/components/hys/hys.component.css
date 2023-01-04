@@ -1,3 +1,28 @@
 div{
     background-color:#303766 ;
 }
+h1{
+    font-size: 5vw;
+    text-align: left;
+    margin-left: 2VW;
+    position: relative;
+    width: 100%;
+    color: #fff;
+}
+#row-button{
+    position: relative;
+    
+    margin-top: 1vw;
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+ }
+
+ .Circulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    max-width: 100%;
+}

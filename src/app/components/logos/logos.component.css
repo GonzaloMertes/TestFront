@@ -16,10 +16,11 @@
 }
 
 .Menu{
-    height: 5.5vw;
+    height: 7vw;
     background-color: #303766; 
     position: relative;
     top: 0%;
+    padding-top: 1vw;
 }
 
 img{
@@ -30,3 +31,6 @@ img{
     background-color: #303766; 
 }
 
+.container{
+    max-width: 100%;
+}

@@ -1,7 +1,15 @@
-<div class="AcercaDe">
+
+<div class="AcercaDe" >
+
+    <div class="col-lg-2" id="row-button">
+        <button type="button" class="btn btn-dark" routerLink="/editacercade/1" *ngIf="isLogged">
+            Editar usuario
+        </button>
+    </div>
+
     <div class="AcercaDe-Mi">
         <div class="AcercaDe-Mi-Foto">
-            <img class="AcercaDe-Mi-Foto-Img"src="../../../assets/mi foto.jpeg"> 
+            <img class="AcercaDe-Mi-Foto-Img"src={{persona.img}}> 
         </div>
         
         <div class="AcercaDe-Mi-Profesion">
@@ -11,14 +19,13 @@
     </div>
     <div class="AcercaDe-Resumen">
         <div class="AcercaDe-Resumen-Titulo">
-            <h1>TITULO</h1>
+            <h1>ACERCA DE MI</h1>
         </div>
         <div class="AcercaDe-Resumen-Texto">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo tenetur voluptatibus perferendis, eaque, voluptatum laudantium placeat ullam quos nemo odio vel, dignissimos cum recusandae quisquam aliquam fuga dolore ex.
-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem explicabo tenetur voluptatibus perferendis, eaque, voluptatum laudantium placeat ullam quos nemo odio vel, dignissimos cum recusandae quisquam aliquam fuga dolore ex.
+                {{persona.descripcion}}
             </p>
         </div>
     </div>
 </div>
+
