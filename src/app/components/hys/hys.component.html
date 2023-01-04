@@ -8,18 +8,21 @@
   </div>
   
   
-<div class="Circulo col-sm-4 col-md-4 col-lg-4" *ngFor="let skill of skill">
-    <circle-progress
-  [percent]="(skill.porcentaje)"
+<div class="Circulo col-sm-4 col-md-4 col-lg-4" *ngFor="let Skill of skill">
+    
+  <circle-progress
+  [percent]="(Skill.porcentaje)"
   [radius]="100"
-  [imageSrc]="'../assets/Html.png'"
-  [title]="(skill.nombre)"
-  [titleColor]="'#5368A6'"
-  [showImage]="true"
+  
+  [title]="(Skill.nombre)"
+  [titleColor]="'#fff'"
+  [showTitle]="true"
+  
   [imageHeight]="70"
   [imageWidth]="70"
   [outerStrokeWidth]="16"
   [innerStrokeWidth]="8"
+  [showSubtitle]="false"
   [outerStrokeColor]="'#5368A6'"
   [innerStrokeColor]="'#C7E596'"
   [animation]="true"
@@ -27,11 +30,11 @@
 ></circle-progress>
 
 <td *ngIf="isLogged">
-  <button class="btn btn-light" routerLink="/editskil/{{skill.id}}">
+  <button class="btn btn-light" routerLink="/editskill/{{Skill.id}}">
       <i class="bi bi-pencil-fill"></i> EDITAR</button>
 </td>
 <td *ngIf="isLogged">
-  <button class="btn btn-danger" (click)="delete(skill.id)" >
+  <button class="btn btn-danger" (click)="delete(Skill.id)" >
       <i class="bi bi-trash-fill"></i> BORRAR</button>
 </td>
 

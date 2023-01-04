@@ -10,9 +10,11 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./edit-acercade.component.css']
 })
 export class EditAcercadeComponent implements OnInit {
-
   persona: persona = null;
-  constructor(private activatedRouter:ActivatedRoute, private personaService:PersonaService, private router: Router,
+
+  constructor(private activatedRouter:ActivatedRoute, 
+    private personaService:PersonaService, 
+    private router: Router,
     public imageService: ImageService) { }
 
   ngOnInit(): void {
