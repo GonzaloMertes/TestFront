@@ -31,6 +31,7 @@ export class HysComponent implements OnInit {
     )
   }
 
+  //VER COMO ELIMINAR LA IMG DE STORAGE
   delete(id: number){
     if(id != undefined){
       this.skillS.delete(id).subscribe(

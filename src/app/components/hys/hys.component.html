@@ -16,8 +16,9 @@
   
   [title]="(Skill.nombre)"
   [titleColor]="'#fff'"
-  [showTitle]="true"
-  
+  [showTitle]="false"
+  [showImage]="true"
+  [imageSrc]="(Skill.img)"
   [imageHeight]="70"
   [imageWidth]="70"
   [outerStrokeWidth]="16"
@@ -31,11 +32,11 @@
 
 <td *ngIf="isLogged">
   <button class="btn btn-light" routerLink="/editskill/{{Skill.id}}">
-      <i class="bi bi-pencil-fill"></i> EDITAR</button>
+      <i class="bi bi-pencil-fill"></i></button>
 </td>
 <td *ngIf="isLogged">
   <button class="btn btn-danger" (click)="delete(Skill.id)" >
-      <i class="bi bi-trash-fill"></i> BORRAR</button>
+      <i class="bi bi-x"></i></button>
 </td>
 
 </div>

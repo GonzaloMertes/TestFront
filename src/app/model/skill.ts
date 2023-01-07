@@ -8,5 +8,6 @@ export class Skill {
         this.nombre = nombre;
         this.porcentaje = porcentaje;
         this.img = img;
+        
     }
 }
