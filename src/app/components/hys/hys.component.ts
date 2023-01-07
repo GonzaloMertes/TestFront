@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Skill } from 'src/app/model/skill';
 import { SkillService } from 'src/app/service/skill.service';
 import { TokenService } from 'src/app/service/token.service';
+import { Storage,ref, deleteObject } from '@angular/fire/storage';
 
 @Component({
   selector: 'app-hys',
@@ -10,8 +11,13 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class HysComponent implements OnInit {
   skill: Skill[] = [];
+  img:string;
+  id:number;
+  
 
-  constructor(private skillS: SkillService, private tokenService: TokenService) { }
+  constructor(private skillS: SkillService, 
+    private tokenService: TokenService, 
+    private storage: Storage) { }
   isLogged = false;
   
   ngOnInit(): void {
@@ -31,8 +37,19 @@ export class HysComponent implements OnInit {
     )
   }
 
-  //VER COMO ELIMINAR LA IMG DE STORAGE
+  
   delete(id: number){
+    // Create a reference to the file to delete
+const desertRef = ref(this.storage, `${this.skill.find(skill => skill.id === id).img}`);
+
+// Delete the file
+deleteObject (desertRef).then(() => {
+  // File deleted successfully
+}).catch((error) => {
+  // Uh-oh, an error occurred!
+});
+    
+
     if(id != undefined){
       this.skillS.delete(id).subscribe(
         data => {
@@ -43,4 +60,7 @@ export class HysComponent implements OnInit {
       )
     }
   }
+
+ 
+
 }
