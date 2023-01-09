@@ -1,0 +1,47 @@
+h1{
+    font-size: 5vw;
+    text-align: left;
+    margin-left: 2VW;
+    position: relative;
+    width: 100% !important;
+    color: #fff;
+}
+h2{
+    font-size: 3vw;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    margin-left: 2VW;
+}
+
+h3{
+    font-size: 2vw;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    margin-left: 2VW;
+}
+
+#row-button{
+    position: relative;
+    width: 100%; 
+    margin-top: 1vw;
+    margin-left: 2vw;
+    margin-bottom: 1vw;
+ }
+
+.row{
+    background-color:#303766 ;
+}
+
+.container{
+    max-width: 100%;
+}
+
+p{
+    color: #fff
+}
+
+button{
+    margin: 3px;
+}

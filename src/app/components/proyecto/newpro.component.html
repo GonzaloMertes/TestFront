@@ -1,0 +1,32 @@
+<div class="total">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-lg-3 col-3"></div>
+                <form #f="ngForm" (ngSubmit)="onCreate()" novalidate class="col-sm-6 col-md-6 col-lg-6 col-6" >
+                    <div class="form-group">
+                        <label for="nombre">Nombre del proyecto</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripcion del proyecto</label>
+                        <input type="text" class="form-control" id="descripcion" name="descripcion" [(ngModel)]="descripcion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">fecha del proyecto</label>
+                        <input type="text" class="form-control" id="fecha" name="fecha" [(ngModel)]="fecha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="link">link del proyecto</label>
+                        <input type="text" class="form-control" id="link" name="link" [(ngModel)]="link" required>
+                    </div>
+                    
+                    <button class="btn btn-primary" type="submit">
+                        Agregar experiencia
+                    </button>
+                </form>
+                <div class="col-sm-3 col-md-3 col-lg-3 col-3"></div>
+        </div>
+    </div>
+    
+    </div>

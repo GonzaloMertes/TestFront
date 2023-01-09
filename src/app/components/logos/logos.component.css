@@ -34,3 +34,31 @@ img{
 .container{
     max-width: 100%;
 }
+.Menu-Responsive{
+    display: none;
+    color: #000;
+    float: right;
+}
+
+
+
+@media screen and (max-width:800px){
+    .Menu{
+        height: 11vw !important;
+    } 
+    img{
+        height: 9vw;
+    }
+    
+}
+
+@media screen and (max-width:550px){
+    .Menu{
+        height: 12vw !important;
+    } 
+    img{
+        height: 10vw;
+    }
+    
+}
+

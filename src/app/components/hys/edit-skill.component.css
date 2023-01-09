@@ -1,0 +1,11 @@
+.container{
+    padding-top: 2vw;
+}
+
+form{
+    border: 1vw;
+    border-color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 1vw;
+}

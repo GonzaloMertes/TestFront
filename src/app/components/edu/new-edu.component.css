@@ -1,17 +1,11 @@
-.total{
-   
-    min-height: 100vh;
-    height: 100% ;
-}
-
 .container{
-    background-color: #fff;
-    padding-top: 1vw;
-    padding-right: 2vw;
-
+    padding-top: 2vw;
 }
 
-input{
-    background-color: #999;
-    width: 100%;
+form{
+    border: 1vw;
+    border-color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 1vw;
 }

@@ -1,8 +1,8 @@
 <div class="container">
     <div class="row">
-        <div>
+        <div class="col-sm-3 col-md-3 col-lg-3 col-3"></div>
             
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm" class="col-sm-6 col-md-6 col-lg-6 col-6 form">
                 <div class="form-group">
                     <label for="nombre">Nueva Skill</label>
                     <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="nombre" required>
@@ -25,6 +25,6 @@
                 </form>
                 
            
-        </div>
+        <div class="col-sm-3 col-md-3 col-lg-3 col-3"></div>
     </div>
 </div>

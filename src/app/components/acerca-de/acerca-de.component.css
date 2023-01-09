@@ -22,6 +22,37 @@
     width: 75%;
     height: 100%;
 }
+
+
+@media screen and (max-width:550px){
+.AcercaDe-Mi{
+        width: 100%;
+       
+    }
+.AcercaDe-Mi-Foto-Img{
+    width: 50%;
+    align-items: center;
+    margin-left: 25%;
+   
+}
+h3{
+    font-size: 3.5vw !important;
+}
+.AcercaDe-Resumen{
+    width: 100%;
+}
+p{
+    font-size: 3.5vw !important;
+}
+
+.AcercaDe-Resumen-Texto{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+}
+
+
 h3{
     
     text-align:center;
