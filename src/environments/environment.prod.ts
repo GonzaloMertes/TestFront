@@ -9,5 +9,5 @@ export const environment = {
     messagingSenderId: '679905145691',
   },
   production: true,
-  URL:'https://textback-production.up.railway.app/'
+  URL:'https://backargprog.onrender.com/'
 };
